@@ -1,0 +1,142 @@
+/* This is used to reset the normal styles */
+*,*::before,
+*::after{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+:root{
+   --font-family:"Inter", sans-serif; 
+   --Off-white: hsl(36, 100%, 99%);
+    --Grayish-blue: hsl(233, 8%, 79%);
+    --Dark-grayish-blue: hsl(236, 13%, 42%);
+    --Very-dark-blue: hsl(240, 100%, 5%);
+    --Soft-orange: hsl(35, 77%, 62%);
+    --Soft-red: hsl(5, 85%, 63%);
+}
+
+body{
+    background-color: var(--Off-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    width: 75vw;
+    height: 90vh;
+    background-color: var(--Off-white);
+    
+}
+
+.section1{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.section1 .logo{
+    width: 50px;
+    height: 40px;
+}
+
+.section1 ul{
+    list-style-type: none;
+    display: flex;
+}
+.section1 li{
+    margin-right: 100px;
+    font-family: var(--font-family);
+    color: var(--Grayish-blue);
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.section1 li:last-child{
+    margin-right: 0;
+}
+
+.section2{
+    width: 100%;
+    height: 60vh;
+   
+    display: flex;
+    justify-content: space-between;
+}
+
+.section2 .left{
+    height: 100%;
+    width: 70%;
+   
+}
+.section2 .left .row1, .section2 .left .row2{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.section2 .left .row1 img{
+object-fit: cover;
+width: 100%;
+height: 100%;
+}
+
+
+.section2 .left .row2 .row2-left{
+    width: 20%;
+    height: 80%;
+}
+
+
+
+.section2 .left .row2 .row2-right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.section2 .left .row2 .row2-left span{
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: xx-large;
+}
+
+
+
+.section2 .left .row2 .row2-right p{
+    font-family: var(--font-family);
+    color: var(--Grayish-blue);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.section2 .left .row2 .row2-right button{
+    background-color: var(--Soft-red);
+    border: none;
+    color:var(--Off-white);
+    width: 100px;
+    height: 30px;
+    font-family: var(--font-family);
+    text-transform: capitalize;
+
+    font-size: 15px;
+    font-weight: 400;
+
+}
+
+
+.section2 .right{
+    height: 100%;
+    width: 28%;
+
+}
